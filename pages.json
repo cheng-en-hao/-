@@ -1,0 +1,99 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/todo/todo",
+			"style": {
+				"navigationBarTitleText": "todo",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/tomato/tomato",
+			"style": {
+				"navigationBarTitleText": "tomato",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/user-center/user-center",
+			"style": {
+				"navigationBarTitleText": "用户中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录/注册",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		// ……其他页面配置
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path": "node_modules/uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/todo/todo",
+				"iconPath": "static/icon/listn.png",
+				"selectedIconPath": "static/icon/list.png",
+				"text": "清单"
+			},
+			{
+				"pagePath": "pages/tomato/tomato",
+				"iconPath": "static/icon/todon.png",
+				"selectedIconPath": "static/icon/todo.png",
+				"text": "番茄"
+			},
+			{
+				"pagePath": "pages/user-center/user-center",
+				"iconPath": "static/icon/myn.png",
+				"selectedIconPath": "static/icon/my.png",
+				"text": "个人"
+			}
+		]
+	}
+}
